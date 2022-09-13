@@ -10,4 +10,4 @@ COPY ./app /demo-temp/app
 
 ENV port=$PORT
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "${port}"]
+CMD python3 app/main.py
