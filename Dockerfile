@@ -10,4 +10,4 @@ COPY ./app /demo-temp/app
 
 ENV port=$PORT
 
-CMD python3 app/main.py
+# CMD python3 app/main.py
