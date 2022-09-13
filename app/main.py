@@ -10,6 +10,6 @@ async def hello_world():
 
 
 @app.get("/greeting/{name}")
-async def hello_world(name: str):
+async def greetings(name: str):
 	return f"Hola {name}! Te quiero mucho <3"
 
