@@ -8,4 +8,6 @@ RUN pip install --no-cache-dir --upgrade -r /demo-temp/requirements.txt
 
 COPY ./app /demo-temp/app
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+ENV port=$PORT
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port ${port}"]
