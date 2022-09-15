@@ -6,7 +6,8 @@ app = FastAPI()
 
 @app.get("/")
 async def hello_world():
-	return "Hello World"
+	import os
+	return str(os.environ["VAR1"])
 
 
 @app.get("/greeting/{name}")
